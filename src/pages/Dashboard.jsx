@@ -69,7 +69,7 @@ const Dashboard = () => {
         </div>
       </div>
 
-      {/* 📊 Charts */}
+      {/* Charts */}
       <div className="grid grid-cols-2 gap-6 mt-8">
 
         {/* Line Chart */}

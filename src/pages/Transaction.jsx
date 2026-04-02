@@ -22,7 +22,7 @@ const Transaction = () => {
     type: "expense",
   });
 
-  // 🔍 Filter Logic
+  //  Filter Logic
   const filteredData = data.filter((t) => {
     const matchesSearch = t.category
       .toLowerCase()
@@ -34,7 +34,7 @@ const Transaction = () => {
     return matchesSearch && matchesFilter;
   });
 
-  // ➕ Add Transaction
+  // Add Transaction
   const handleAdd = () => {
     if (!newTransaction.date || !newTransaction.amount || !newTransaction.category) return;
 
@@ -54,7 +54,7 @@ const Transaction = () => {
     });
   };
 
-  // ❌ Delete Transaction
+  //  Delete Transaction
   const handleDelete = (id) => {
     setData(data.filter((t) => t.id !== id));
   };
@@ -76,7 +76,7 @@ const Transaction = () => {
         </select>
       </div>
 
-      {/* ➕ Add Form */}
+      {/*  Add Form */}
       {role === "admin" && (
         <div className="bg-gray-800 p-4 rounded shadow mb-4 flex gap-2 flex-wrap">
           <input
@@ -128,7 +128,7 @@ const Transaction = () => {
         </div>
       )}
 
-      {/* 🔍 Search + Filter */}
+      {/*  Search + Filter */}
       <div className="flex gap-4 mb-4">
         <input
           type="text"
@@ -149,7 +149,7 @@ const Transaction = () => {
         </select>
       </div>
 
-      {/* 📋 Table */}
+      {/*  Table */}
       <div className="bg-gray-800 rounded shadow">
         <table className="w-full text-left">
           <thead className="bg-gray-700 text-gray-300">
@@ -198,7 +198,7 @@ const Transaction = () => {
         </table>
       </div>
 
-      {/* 📊 Insights */}
+      {/*  Insights */}
       <div className="mt-8 bg-gray-800 p-4 rounded shadow text-gray-400">
         <h2 className="font-semibold mb-4 text-gray-300">Insights</h2>
 
